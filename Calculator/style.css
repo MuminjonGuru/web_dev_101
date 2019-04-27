@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient( rgb(9, 148, 95), rgb(63, 124, 45));}
+
+
+#display {
+    width: 100%;
+    padding: 0 20px 0;
+    box-sizing: border-box;
+    color: #fff;
+    background: linear-gradient(rgb(14, 105, 45), rgb(50, 168, 50));
+    font: 30px sans-serif;
+    vertical-align: top;
+    text-align: right;
+    border: none;
+    resize: none;
+}
+
+#main {
+    box-sizing: border-box;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#calculator {
+    box-shadow: 0 10px 20px 5px rgb(146, 146, 180);
+}
+
+#expression {
+    line-height: 1.5em;
+    text-align: right;
+    padding: 20px;
+    background: linear-gradient(rgb(79, 172, 126), rgb(25, 121, 25));
+    color: #fff;
+    font: 16px sans-serif;
+    height: 20px;
+}
+
+#ac {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    color: #fff;
+}
+
+#backspace, #negative {
+    font-size: 0.8em;
+    border: none;
+    color: #fff;
+}
+
+#asterisk {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#display::placeholder {
+    color: rgb(8, 138, 36);
+    opacity: 0.4;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    box-sizing: border-box;
+}
+
+.button {
+    cursor: pointer;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    font: 22px sans-serif;
+    background: rgb(27, 87, 35);
+    color: #fff;
+    border: none;
+}
+
+@media (hover:hover) {
+    .button:hover {
+        background: radial-gradient(rgb(80, 163, 78), rgb(188, 224, 217));
+    }
+}
